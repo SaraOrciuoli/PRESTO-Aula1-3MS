@@ -1,0 +1,28 @@
+:root {
+  --main: #f5dddd;
+  --sec: #a4a3ae;
+  --acc: #53687e;
+}
+* {
+  font-family: "Questrial", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+#bar {
+  height: 40px;
+}
+.button {
+  height: 100%;
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px solid var(--main);
+  border-right: 1px solid var(--main);
+  color: var(--main);
+  background-color: black;
+}
