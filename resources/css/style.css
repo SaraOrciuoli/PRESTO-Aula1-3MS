@@ -3,9 +3,11 @@
   --sec: #a4a3ae;
   --acc: #53687e;
 }
+
 * {
   font-family: "Questrial", sans-serif;
 }
+
 h1,
 h2,
 h3,
@@ -14,9 +16,11 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
 }
+
 #bar {
   height: 5%;
 }
+
 .navbar {
   background: none;
   z-index: 9999;
@@ -24,15 +28,18 @@ h6 {
   top: -1px;
   left: 0;
 }
+
 @media screen and (max-width: 768px) {
   .navbar {
     background-color: var(--main);
     position: relative;
   }
+
   header {
     position: relative;
   }
 }
+
 .button {
   height: 100%;
   border-top: none;
@@ -42,35 +49,43 @@ h6 {
   color: var(--main);
   background-color: black;
 }
+
 .button:hover {
   color: var(--acc);
 }
+
 .carousel-item {
   height: 100vh;
 }
+
 .blank {
   height: 2000px;
 }
+
 header {
   left: 0;
   top: 3.3%;
 }
+
 .stick-top {
   background-color: var(--main);
   transition: 0.5s;
 }
-.div-text{
+
+.div-text {
   left: 10%;
   top: 30%;
-  
+
 }
-.new{
+
+.new {
   font-size: 50px;
   font-weight: 600;
 }
-.div-text-2{
-  bottom:10%;
-  right:1%;
+
+.div-text-2 {
+  bottom: 10%;
+  right: 1%;
 
 }
 
@@ -82,64 +97,70 @@ header {
 }
 
 @keyframes translate {
- 0% {
-  /* -200 perchè parte da sinistra */
-  transform: translateX(-200px); 
-  opacity: 0;
- }
- 100% {
-  
-  transform: translateX(0px);
-  opacity: 1;
- }
+  0% {
+    /* -200 perchè parte da sinistra */
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+
+  100% {
+
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 
-.h2-anim2{
+.h2-anim2 {
   /* identifica il keyframes da richiamare */
   animation-name: rev-translate;
   animation-duration: 4s;
   /* count le volte che ripete l animazione */
   animation-iteration-count: 1;
   /* parte il ritardo */
-  
+
 }
- @keyframes rev-translate {
+
+@keyframes rev-translate {
   0% {
     transform: translateX(200px);
-    opacity:0;
+    opacity: 0;
   }
-  40%{
+
+  40% {
     transform: translateX(200px);
-    opacity:0;
+    opacity: 0;
   }
-  100%{
-    transform:translateX(0px);
+
+  100% {
+    transform: translateX(0px);
     opacity: 1;
   }
-  
- }
 
- /* girotondo */
- .btn-anim{
+}
+
+/* girotondo */
+.btn-anim {
   animation-name: girotondo;
   animation-duration: 4s;
   animation-iteration-count: 1;
 }
 
 @keyframes girotondo {
-  0%{
-    transform:rotate(0deg) translateY(150px);
-    opacity:0;
-  
+  0% {
+    transform: rotate(0deg) translateY(150px);
+    opacity: 0;
+
   }
+
   100% {
-    transform:rotate(360deg) translateY(0px);
-    opacity:1;
+    transform: rotate(360deg) translateY(0px);
+    opacity: 1;
 
 
   }
 }
+
 main {
   margin-top: 91.8vh;
   background-color: var(--sec);
@@ -153,4 +174,31 @@ h1 {
   /* inserimento colore e spessore del bordo caratteri */
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 1.5px;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  color: var(--acc);
+  margin-right: 8px;
+  transition: 0.3s ease-in;
+
+
+
+}
+
+.filter-btn:hover {
+  color: black;
+  border-bottom: 2px solid black;
+  
+
+}
+
+.filter-btn:focus{
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.myAccordion{
+background-color: var(--main);
 }
