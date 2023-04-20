@@ -53,9 +53,23 @@ h6 {
 }
 header {
   left: 0;
-  top: 2.8%;
+  top: 3.2%;
 }
 .stick-top {
   background-color: var(--main);
   transition: 0.5s;
+}
+.div-text{
+  left: 10%;
+  top: 30%;
+  
+}
+.new{
+  font-size: 50px;
+  font-weight: 600;
+}
+.div-text-2{
+  bottom:10%;
+  right:1%;
+
 }
