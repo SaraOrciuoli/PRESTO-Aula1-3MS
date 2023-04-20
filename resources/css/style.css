@@ -17,6 +17,22 @@ h6 {
 #bar {
   height: 5%;
 }
+.navbar {
+  background: none;
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    background-color: var(--main);
+    position: relative;
+  }
+  header {
+    position: relative;
+  }
+}
 .button {
   height: 100%;
   border-top: none;
@@ -28,4 +44,18 @@ h6 {
 }
 .button:hover {
   color: var(--acc);
+}
+.carousel-item {
+  height: 100vh;
+}
+.blank {
+  height: 2000px;
+}
+header {
+  left: 0;
+  top: 2.8%;
+}
+.stick-top {
+  background-color: var(--main);
+  transition: 0.5s;
 }

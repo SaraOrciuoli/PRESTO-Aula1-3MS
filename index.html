@@ -35,7 +35,8 @@
     <link rel="stylesheet" href="./resources/css/style.css" />
   </head>
   <body>
-    <!--black bar-->
+    <!-- Black bar -->
+
     <div id="bar" class="container-fluid bg-black d-none d-md-block">
       <div class="row justify-content-around align-items-center h-100">
         <div class="col-4">
@@ -51,10 +52,9 @@
         </div>
       </div>
     </div>
+    <!-- Navbar -->
 
-    <!--navbar-->
-
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand me-2 me-md-4" href="#">
           <img src="./resources/media/logo.png" alt="logo"
@@ -88,7 +88,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div id="bar" class="container-fluid bg-black d-block d-md-none">
+          <div id="bar" class="container-fluid bg-black d-block d-md-none mt-1">
             <div
               class="row flex-wrap justify-content-center align-items-center"
             >
@@ -164,9 +164,11 @@
         </div>
       </div>
     </nav>
-    <header class="container-fluid">
+    <!-- Carousel -->
+
+    <header class="container-fluid position-absolute">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 p-0">
           <div
             id="carouselExampleControls"
             class="carousel slide"
@@ -174,13 +176,25 @@
           >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="..." />
+                <img
+                  src="./resources/media/carousel2.jpg"
+                  class="d-block w-100"
+                  alt="Immagine-1"
+                />
               </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="..." />
+              <div class="carousel-item active">
+                <img
+                  src="./resources/media/Accessories-1.jpg"
+                  class="d-block w-100"
+                  alt="Immagine-2"
+                />
               </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="..." />
+              <div class="carousel-item active">
+                <img
+                  src="./resources/media/Fashion-1.jpg"
+                  class="d-block w-100"
+                  alt="Immagine-3"
+                />
               </div>
             </div>
             <button
@@ -211,7 +225,7 @@
         </div>
       </div>
     </header>
-
+    <div class="blank"></div>
     <!-- Script Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
