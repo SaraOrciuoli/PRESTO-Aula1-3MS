@@ -21,7 +21,7 @@ h6 {
   background: none;
   z-index: 9999;
   position: sticky;
-  top: 0;
+  top: -1px;
   left: 0;
 }
 @media screen and (max-width: 768px) {
@@ -53,7 +53,7 @@ h6 {
 }
 header {
   left: 0;
-  top: 3.2%;
+  top: 3.3%;
 }
 .stick-top {
   background-color: var(--main);
@@ -139,5 +139,18 @@ header {
 
 
   }
-  
+}
+main {
+  margin-top: 91.8vh;
+  background-color: var(--sec);
+}
+
+h1 {
+  color: var(--acc);
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  /* inserimento colore e spessore del bordo caratteri */
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1.5px;
 }
