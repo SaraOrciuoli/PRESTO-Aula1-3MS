@@ -36,7 +36,7 @@
   </head>
   <body>
     <!--black bar-->
-    <div id="bar" class="container-fluid bg-black  d-none d-md-block">
+    <div id="bar" class="container-fluid bg-black d-none d-md-block">
       <div class="row justify-content-around align-items-center h-100">
         <div class="col-4">
           <p class="text-light text-center mb-0">
@@ -53,27 +53,29 @@
     </div>
 
     <!--navbar-->
-    
+
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand me-2 me-md-4" href="#"> <img src="./resources/media/logo.png" alt="logo"></a>
-         <ul class="navbar-nav d-md-none d-flex flex-row me-2">                                     
-            <li class="nav-item ">
-              <button class="btn btn-outline-dark ">
+        <a class="navbar-brand me-2 me-md-4" href="#">
+          <img src="./resources/media/logo.png" alt="logo"
+        /></a>
+        <ul class="navbar-nav d-md-none d-flex flex-row me-2">
+          <li class="nav-item">
+            <button class="btn btn-outline-dark">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </li>
-            <li class="nav-item ms-3"> 
-              <button class="btn btn-outline-dark">
-            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+          <li class="nav-item ms-3">
+            <button class="btn btn-outline-dark">
+              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
             </button>
-            </li>
-            <li class="nav-item ms-3">
-              <button class="btn btn-outline-dark">
-                <i class="fa-regular fa-heart"></i>
+          </li>
+          <li class="nav-item ms-3">
+            <button class="btn btn-outline-dark">
+              <i class="fa-regular fa-heart"></i>
             </button>
-            </li>
-          </ul>
+          </li>
+        </ul>
         <button
           class="navbar-toggler"
           type="button"
@@ -87,7 +89,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div id="bar" class="container-fluid bg-black d-block d-md-none">
-            <div class="row flex-wrap justify-content-center align-items-center">
+            <div
+              class="row flex-wrap justify-content-center align-items-center"
+            >
               <div class="col-12">
                 <p class="text-light text-center mb-0">
                   Free shipping for standard order over $100
@@ -105,22 +109,21 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Home
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Homepage 1 </a></li>
-              <li><a class="dropdown-item" href="#">Homepage 2 </a></li>
-              <li>
-                <a class="dropdown-item" href="#">Homepage 3</a>
-              </li>
-            </ul>
-              
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Homepage 1 </a></li>
+                <li><a class="dropdown-item" href="#">Homepage 2 </a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Homepage 3</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Shop</a>
@@ -137,56 +140,77 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contacts</a>
             </li>
-              
           </ul>
-      </div>
-          <!--btn con icone-->
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-none d-md-flex flex-row">                                     
-            <li class="nav-item ">
-              <button class="btn btn-outline-dark ">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </li>
-            <li class="nav-item ms-3"> 
+        </div>
+        <!--btn con icone-->
+        <div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-none d-md-flex flex-row">
+            <li class="nav-item">
               <button class="btn btn-outline-dark">
-            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-            </button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </li>
+            <li class="nav-item ms-3">
+              <button class="btn btn-outline-dark">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+              </button>
             </li>
             <li class="nav-item ms-3">
               <button class="btn btn-outline-dark">
                 <i class="fa-regular fa-heart"></i>
-            </button>
+              </button>
             </li>
           </ul>
-
-    </nav>
-<header class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active bg-carousel" data-bs-interval="10000">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="..." class="d-block w-100 h-carousel" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100 h-carousel" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-  </div>
-
-</header>
+    </nav>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- Script Bootstrap -->
     <script

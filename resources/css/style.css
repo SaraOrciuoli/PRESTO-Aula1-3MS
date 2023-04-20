@@ -26,10 +26,6 @@ h6 {
   color: var(--main);
   background-color: black;
 }
-.button:hover{
+.button:hover {
   color: var(--acc);
-}
-
-.h-carousel {
-  height: 80% !important;
 }
