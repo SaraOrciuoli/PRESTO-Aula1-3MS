@@ -73,3 +73,71 @@ header {
   right:1%;
 
 }
+
+.h2-anim {
+  animation-name: translate;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes translate {
+ 0% {
+  /* -200 perchè parte da sinistra */
+  transform: translateX(-200px); 
+  opacity: 0;
+ }
+ 100% {
+  
+  transform: translateX(0px);
+  opacity: 1;
+ }
+}
+
+
+.h2-anim2{
+  /* identifica il keyframes da richiamare */
+  animation-name: rev-translate;
+  animation-duration: 4s;
+  /* count le volte che ripete l animazione */
+  animation-iteration-count: 1;
+  /* parte il ritardo */
+  
+}
+ @keyframes rev-translate {
+  0% {
+    transform: translateX(200px);
+    opacity:0;
+  }
+  40%{
+    transform: translateX(200px);
+    opacity:0;
+  }
+  100%{
+    transform:translateX(0px);
+    opacity: 1;
+  }
+  
+ }
+
+ /* girotondo */
+ .btn-anim{
+  animation-name: girotondo;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes girotondo {
+  0%{
+    transform:rotate(0deg) translateY(150px);
+    opacity:0;
+  
+  }
+  100% {
+    transform:rotate(360deg) translateY(0px);
+    opacity:1;
+
+
+  }
+  
+}
