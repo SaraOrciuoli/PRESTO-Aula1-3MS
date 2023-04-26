@@ -192,6 +192,7 @@ h1 {
 }
 .second-row {
   min-height: 120vh;
+  margin-top: 10vh;
 }
 .accordion-button:not(.collapsed) {
   color: var(--main);
