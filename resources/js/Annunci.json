@@ -1,0 +1,47 @@
+[
+    {
+        "category": "Shoes",
+        "name": "Nike Air",
+        "price": "150"
+    },
+    {
+        "category": "Shoes",
+        "name": "Birkenstock",
+        "price": "300"
+    },
+    {
+        "category": "Men",
+        "name": "Jeans",
+        "price": "50"
+    },
+    {
+        "category": "Men",
+        "name": "Camicia",
+        "price": "20"
+    },
+    {
+        "category": "Women",
+        "name": "Tailleur",
+        "price": "70"
+    },
+    {
+        "category": "Women",
+        "name": "Jeans",
+        "price": "50"
+    },
+    {
+        "category": "Kids",
+        "name": "Tracksuit",
+        "price": "40"
+    },
+    {
+        "category": "Accessories",
+        "name": "Bracelet",
+        "price": "15"
+    },
+    {
+        "category": "Accessories",
+        "name": "handbag",
+        "price": "10"
+    }
+]

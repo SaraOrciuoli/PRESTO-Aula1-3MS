@@ -204,3 +204,26 @@ h1 {
 .accordion-button:not(.collapsed)::after {
   background-image: url(../media/chevron-down-solid.svg);
 }
+
+.card{
+  background-color: var(--main);
+}
+.btn-card{
+  background-color: var(--sec);
+  border: solid 3px var(--acc);
+  color: var(--main);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 25px 5px;
+  transition: 1s;
+}
+
+.btn-card:hover{
+  background-color: var(--acc);
+  color: var(--main);
+  border-radius: 25px;
+}
+
+.card-text{
+font-size: 20px;
+}
