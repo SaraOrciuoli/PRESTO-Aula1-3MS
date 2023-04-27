@@ -13,7 +13,7 @@ fetch("resources/js/Annunci.json")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
-
+   
     function setCategory() {
       let uniqueCategories = [];
       data.forEach((element) => {
@@ -25,6 +25,7 @@ fetch("resources/js/Annunci.json")
     }
     setCategory();
     let wrapper = document.querySelector(".wrapper");
+    let alert = document.querySelector('.alert');
 
     function CreateCards(array) {
       wrapper.innerHTML = "";
@@ -40,6 +41,17 @@ fetch("resources/js/Annunci.json")
 
         wrapper.appendChild(div);
       });
+      
+      if (array.length == 0) {
+
+        alert.classList.remove('d-none');
+        alert.classList.add('d-block')
+      } else if (array.length <= 2) {
+        wrapper.classList.remove('justify-content-evenly');
+      }
+      else {
+        wrapper.classList.add('justify-content-evenly');
+      }
     }
     CreateCards(data);
 
@@ -93,29 +105,41 @@ fetch("resources/js/Annunci.json")
       princeRange.max = maxPrice
       princeRange.value = maxPrice
       minRange.innerHTML = `${minPrice}&euro;`
-      currentRange.innerHTML = `${maxPrice}&euro;`   
+      currentRange.innerHTML = `${maxPrice}&euro;`
     }
-  setPriceRage();
+    setPriceRage();
 
-  function filterByPrice(number) {
-    
-    let filtered = data.filter(annuncio => Number(annuncio.price)<= Number(number))
-    CreateCards(filtered)
+    function filterByPrice(number) {
 
-  }
+      let filtered = data.filter(annuncio => Number(annuncio.price) <= Number(number))
+      CreateCards(filtered)
 
-    princeRange.addEventListener("input",() => {
+    }
+
+    princeRange.addEventListener("input", () => {
       filterByPrice(princeRange.value);
       currentRange.innerHTML = `${princeRange.value}&euro;`
 
 
-      
-    })
 
-  
+    })
+    let searchArticle = document.querySelector('#search');
+    let searchButton = document.querySelector('#search-btn')
+
+    function filterByName(word) {
+      let filtered = data.filter(annuncio => annuncio.name.toLowerCase().includes(word.toLowerCase()));
+      CreateCards(filtered)
+
+    }
+
+    searchButton.addEventListener('click', () => {
+      filterByName(searchArticle.value);
+      searchArticle.value = '';
+
+
+    })
   });
 
-  
- 
 
- 
+
+
