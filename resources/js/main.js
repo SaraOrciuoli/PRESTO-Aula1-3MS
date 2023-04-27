@@ -79,4 +79,43 @@ fetch("resources/js/Annunci.json")
     btnAccessories.addEventListener("click", () => {
       filterByCategory("Accessories");
     });
+
+    let princeRange = document.querySelector("#range");
+    let minRange = document.querySelector("#minimum");
+    let currentRange = document.querySelector("#currentrage");
+
+
+    function setPriceRage() {
+      let prices = data.map(annuncio => Number(annuncio.price))
+      let maxPrice = Math.max(...prices)
+      let minPrice = Math.min(...prices)
+      princeRange.min = minPrice
+      princeRange.max = maxPrice
+      princeRange.value = maxPrice
+      minRange.innerHTML = `${minPrice}&euro;`
+      currentRange.innerHTML = `${maxPrice}&euro;`   
+    }
+  setPriceRage();
+
+  function filterByPrice(number) {
+    
+    let filtered = data.filter(annuncio => Number(annuncio.price)<= Number(number))
+    CreateCards(filtered)
+
+  }
+
+    princeRange.addEventListener("input",() => {
+      filterByPrice(princeRange.value);
+      currentRange.innerHTML = `${princeRange.value}&euro;`
+
+
+      
+    })
+
+  
   });
+
+  
+ 
+
+ 
