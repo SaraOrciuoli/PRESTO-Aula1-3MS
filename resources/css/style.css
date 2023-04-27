@@ -228,3 +228,38 @@ h1 {
 .card-text {
   font-size: 20px;
 }
+
+
+/* SWIPER */
+
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.margin-top{
+  margin-top: 150px;
+}
+
+.bgfooter{
+  background-image: url(../media/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+
+}
+
